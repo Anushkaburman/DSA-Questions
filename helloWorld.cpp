@@ -2,5 +2,11 @@
 using namespace std;
 
 int main(){
-    cout << "Hello World" << endl;
+   int n;
+    while(cin>>n){
+        if(n==42){
+            break;
+        }
+        cout<<n<<endl;
+    }
 }
