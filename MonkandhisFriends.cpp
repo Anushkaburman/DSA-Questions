@@ -5,23 +5,28 @@ int main(){
 	int t;
 	cin >> t;
 
-	vector<int>s;
-	set<int>a;
+	
 	while(t--){
 		int n;
 		cin >> n;
 		int m;
 		cin >> m;
+		vector<int>s(n+m);
+	    set<int>a;
 		for(int i=0; i<n+m; i++){
-			int x;
-			cin >> x;
-			s.push_back(x);
+			cin >> s[i];
 		}
 		for(int i=0; i<n; i++){
-			a.insert=s[i];
+			a.insert(s[i]);
 		}
 		for(int i=n; i<n+m; i++){
-			auto it=
+			if(a.count(s[i])){
+				cout<<"YES"<<endl;
+			}
+			else{
+				cout<<"NO"<<endl;
+			}
+			a.insert(s[i]);
 		}
 	}
 }
