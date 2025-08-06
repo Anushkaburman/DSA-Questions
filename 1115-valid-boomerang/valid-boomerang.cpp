@@ -1,0 +1,13 @@
+class Solution {
+public:
+    bool isBoomerang(vector<vector<int>>& points) {
+        auto &a = points[0];
+        auto &b = points[1];
+        auto &c = points[2];
+          if(a == b || b == c || c == a){
+            return false;
+          }else{
+            return(b[1] - a[1])*(c[0]-a[0]) != (c[1]-a[1])*(b[0]-a[0]);
+          }
+    }
+};
